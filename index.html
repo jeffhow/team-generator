@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Team Generator</title>
+  </head>
+  <body>
+    <main class="container" id="main">
+      <header>
+        <h1>Team Generator</h1>
+      </header>
+      <section id="team-setup">
+        <form>
+          <div class="row">
+            <div class="col">
+              <fieldset id="students">
+                <legend>Student Names</legend>
+                <div class="form-group">
+                  <label>Number of Students:</label>
+                  <input type="number" class="form-control" id="no-of-students" min="1" value="1">
+                </div>
+                <div class="form-group stu-group">
+                  <input type="text" class="form-control stu-name" id="stu1" placeholder="Student Name">
+                </div>
+              </fieldset>
+            </div>
+            <div class="col">
+              <fieldset id="teams">
+                <legend>Team Names</legend>
+                <div class="form-group">
+                  <label>Number of Teams:</label>
+                  <input type="number" class="form-control" id="no-of-teams" min="1" value="1">
+                </div>
+                <div class="form-group team-group">
+                  <input type="text" class="form-control team-name" id="team1" placeholder="Team Name">
+                </div>
+              </fieldset>
+            </div>
+          </div>
+          <button class="btn btn-primary" id="make-teams">Make Teams</button>
+        </form>
+      </section>
+      <section id="loading">
+        <img src="Wedges-3s-200px.svg" alt="loading graphic">
+      </section>
+      <section id="output">
+        <button id="reset" class="btn btn-primary">Reset</button>
+      </section>
+    </main>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="generator.js"></script>
+  </body>
+</html>
